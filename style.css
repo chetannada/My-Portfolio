@@ -19,14 +19,13 @@ html{
 .navbar {
     position :fixed;
     width: 100%;
-    padding: 30px 0;
+    padding: 10px 0;
     z-index: 999;
-    /* background-color: crimson; */
     font-family: "Ubuntu", sans-serif;
     transition: all 0.3s ease;
 }
 .navbar.sticky {
-    padding: 10px 0;
+    padding: 2px 0;
     background-color: crimson;
 }
 .max-width{
@@ -40,17 +39,23 @@ html{
     justify-content: space-between;
 }
 .navbar .logo a {
-    font-size: 35px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 500;
     color: #fff;
     font-family: "Pacifico";
     transition: all 0.3s ease;
 }
+
 .navbar .logo a span{
     color: crimson;
 }
 .navbar.sticky .logo a span{
     color: white;
+}
+.navbar.sticky .logo a:hover,
+.navbar.sticky .logo a span:hover
+{
+    color:black;
 }
 .navbar .menu li{
     list-style: none;
@@ -68,7 +73,8 @@ html{
     color: crimson;
 }
 .navbar.sticky .menu li a:hover{
-    color: white;
+    color: #000;
+    
 }
 
 /* Menu Button Styling */
@@ -246,28 +252,45 @@ section .title::after{
 /* Social media section styling */
 .button1 {
 	float: left;
-	width: 60px;
-	height: 60px;
+	width: 45px;
+	height: 45px;
 	cursor: pointer;
 	background: #fff;
 	overflow: hidden;
-	border-radius: 50px;
+	border-radius: 35px;
 	transition: all 0.3s ease-in-out;
-	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
-.button1 .icon i{
-    color: crimson;
-}
-.button1 span {
-	font-size: 20px;
-	font-weight: 500;
-	line-height: 60px;
-	margin-left: 10px;
+.button1 .icon {
+	width: 45px;
+	height: 45px;
+	text-align: center;
+	border-radius: 35px;
+	display: inline-block;
+	transition: all 0.3s ease-in-out;
 }
 
-.button1:hover {
-	width: 200px;
+.button1 .icon i {
+	font-size: 18px;
+	line-height: 45px;
+    color: crimson;
+	transition: all 0.3s ease-in-out;
 }
+.button1:hover {
+	width: 150px;
+    
+}
+.button1:hover i{
+    color: #fff;
+}
+.button1 span {
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 10px;
+	margin-left: 5px;
+}
+
+
 
 .button1:nth-child(1):hover .icon {
 	background: #e1306c;
@@ -282,17 +305,19 @@ section .title::after{
 }
 
 .button1:nth-child(4):hover .icon {
-	background: #0e76a8;
+	background: #1da1f2;
 }
 
 .button1:nth-child(5):hover .icon {
-	background: #ff0000;
+	background: #1da1f2;
 }
 
 .button1:nth-child(6):hover .icon {
 	background: #333;
 }
-
+.button1:nth-child(7):hover .icon {
+	background: #1da1f2;
+}
 .button1:nth-child(1) span a{
 	color: #e1306c;
 }
@@ -306,34 +331,18 @@ section .title::after{
 }
 
 .button1:nth-child(4) span a{
-	color: #0e76a8;
+	color: #1da1f2;
 }
 
 .button1:nth-child(5) span a{
-	color: #ff0000;
+	color: #1da1f2;
 }
 
 .button1:nth-child(6) span a{
 	color: #333;
 }
-
-.button1 .icon {
-	width: 60px;
-	height: 60px;
-	text-align: center;
-	border-radius: 50px;
-	display: inline-block;
-	transition: all 0.3s ease-in-out;
-}
-
-.button1 .icon i {
-	font-size: 25px;
-	line-height: 60px;
-	transition: all 0.3s ease-in-out;
-}
-
-.button1:hover i {
-	color: #fff;
+.button1:nth-child(7) span a{
+	color: #1da1f2;
 }
 
 
@@ -432,6 +441,7 @@ section .title::after{
     width: 100%;
     background: lightgrey;
     position: relative;
+    
 }
 .skills .skills-content .right .line::before{
     content: "";
@@ -440,7 +450,9 @@ section .title::after{
     left: 0;
     top: 0;
     background: crimson;
+    transition: all 0.3s linear;
 }
+
 .skills .skills-content .right .html::before{
     width: 90%;
 }
@@ -453,6 +465,13 @@ section .title::after{
 .skills .skills-content .right .rjs::before{
     width: 50%;
 }
+.skills .skills-content .right .adp::before{
+    width: 90%;
+}
+
+
+
+
 
 /* teams section styling */
 .teams .title::after{
@@ -524,6 +543,9 @@ section .title::after{
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
+.contact .left .text{
+    margin-top: 20px;
+}
 .contact .contact-content .left .text{
     font-size: 20px;
     font-weight: 600;
@@ -531,6 +553,12 @@ section .title::after{
 }
 .contact .contact-content .left p{
     text-align: justify;
+}
+.contact .contact-content .left .text1{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 .contact .contact-content .left .icons{
     margin: 10px 0;
@@ -561,6 +589,10 @@ section .title::after{
 .contact .contact-content .info .sub-title{
     color: #333;
     
+}
+.contact .right .text{
+    padding-bottom: 10px;
+    font-weight: 500;
 }
 .contact .right form .fields{
     display: flex;
@@ -644,7 +676,6 @@ footer span a:hover{
     .about .about-content .left img{
         height: 350px;
         width: 350px;
-
     }
 }
 @media (max-width: 991px){
@@ -672,7 +703,7 @@ footer span a:hover{
         top: 0;
         background: #111;
         text-align: center;
-        padding-top: 80px;
+        padding-top: 40px;
         transition: all 0.3s ease;
     }
     .navbar .menu.active{
@@ -703,12 +734,11 @@ footer span a:hover{
         width: 100%;
     }
     .about .about-content .left .wrapper{
-        display: flex;
-        justify-content: left;
-        margin: 0 auto 60px;
+        margin: 0 auto 10px;
     }
     .about .about-content .right{
         flex: 100%;
+        margin-top: 30px;
     }
     .services .serv-content .card{
         width: calc(50% - 10px);
@@ -719,6 +749,11 @@ footer span a:hover{
         width: 100%;
         margin-bottom: 35px;
     }
+    .contact .left .text{
+        margin-top: 0px;
+    }
+    
+    
 }
 @media (max-width: 690px){
 
@@ -737,6 +772,7 @@ footer span a:hover{
     .services .serv-content .card{
         width: 100%;
     }
+    
 }
 @media (max-width: 500px){
     .max-width{
@@ -747,5 +783,24 @@ footer span a:hover{
     }
     .home .home-content .text-3{
         font-size: 27px;
+    }
+    
+    .contact .left .wrapper .buttonmob{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact .left .wrapper .buttonmob1{
+        padding-top: 5px;
+    }
+    
+    .about .about-content .left .wrapper .buttonmob{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about .about-content .left .wrapper .buttonmob1{
+        padding-top: 5px;
+    }
+    .about .about-content .left .wrapper{
+        margin: 0 0 0 90px;
     }
 }
