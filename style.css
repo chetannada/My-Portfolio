@@ -145,22 +145,26 @@ html{
     background: crimson;
     color: #fff;
     font-size: 25px;
-    padding: 12px 36px;
+    padding: 8px 20px;
     margin-top: 20px;
     border-radius: 6px;
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
+.home .home-content .web{
+    margin-right: 25px;
+}
+
 .home .home-content a:hover{
     color: white;
-    background: none;
+    background: #000;
 }
 
 /* all similar content styling code */
 section{
     padding: 100px 0;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .teams, .projects, .contact, footer{
     font-family: "Poppins", sans-serif;
 }
 .about .about-content,
@@ -202,6 +206,17 @@ section .title::after{
     transform: translateX(-50%);
 }
 
+.services, .teams, .contact{
+    background: #111;
+    color: #fff;
+}
+.services .title::before,
+.teams .title::before,
+.contact .title::before{
+    background: #fff;
+}
+
+
 
 
 /* about section styling */
@@ -216,7 +231,7 @@ section .title::after{
     height: 400px;
     width: 400px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 40px 0px 40px 0px;
 }
 .about .about-content .right{
     width: 55%;
@@ -238,7 +253,7 @@ section .title::after{
     color: #fff;
     font-size: 25px;
     font-weight: 500;
-    padding: 1px 30px;
+    padding: 3px 25px;
     margin-top: 20px;
     border-radius: 6px;
     border: 2px solid crimson;
@@ -348,14 +363,7 @@ section .title::after{
 
 
 /* services section styling */
-.services, .teams{
-    background: #111;
-    color: #fff;
-}
-.services .title::before,
-.teams .title::before{
-    background: #fff;
-}
+
 .services .title::after{
     background: #111;
     content: "what i provide";
@@ -364,7 +372,7 @@ section .title::after{
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
-    border-radius: 6px;
+    border-radius: 0px 40px 0px 40px;
     cursor: pointer;
     padding: 20px 25px;
     transition: all 0.3s ease;
@@ -483,10 +491,12 @@ section .title::after{
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
+    border-radius: 40px 0px 40px 0px;
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover{
     background: crimson;
+    cursor: pointer;
 }
 .teams .carousel .card .box{
     display: flex;
@@ -536,8 +546,77 @@ section .title::after{
     background: crimson!important;
 }
 
+
+
+/* Project section styling */
+.projects .title::after{
+    content: "check my work";
+}
+.projects .carousel .card{
+    background: #222;
+    border-radius: 0px 40px 0px 40px;
+    padding: 25px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.projects .carousel .card:hover{
+    background: crimson;
+}
+.projects .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.projects .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+
+.projects .carousel .card p{
+    font-size: 22px;
+    padding-top: 8px;
+    color: #fff;
+}
+.projects .carousel .card img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 0px 40px 0px 40px;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}
+.projects .carousel .card:hover img{
+    border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson!important;
+}
+
+
+
+
 /* contact section styling */
 .contact .title::after{
+    background: #111;
     content: "get in touch";
 }
 .contact .contact-content .column{
@@ -587,7 +666,7 @@ section .title::after{
     
 }
 .contact .contact-content .info .sub-title{
-    color: #333;
+    color: #fff;
     
 }
 .contact .right .text{
@@ -629,7 +708,8 @@ section .title::after{
 }
 .contact .right form .button{
     height: 47px;
-    width: 170px;
+    width: 220px;
+    
 }
 .contact .right form .button button{
     height: 100%;
@@ -637,22 +717,22 @@ section .title::after{
     border: 2px solid crimson;
     background: crimson;
     color: #fff;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
     border-radius: 6px;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 .contact .right form .button button:hover{
-    color: crimson;
+    color: #fff;
     background: none;
 }
 
 /* footer section styling */
 footer{
-    background: #111;
+    background: #fff;
     padding: 20px 23px;
-    color: #fff;
+    color: #000;
     text-align: center;
 }
 footer span a{
@@ -724,8 +804,8 @@ footer span a:hover{
         font-size: 35px;
     }
     .home .home-content a{
-        font-size: 23px;
-        padding: 10px 30px;
+        font-size: 22px;
+        padding: 6px 24px;
     }
     .max-width{
         max-width: 800px;
@@ -733,6 +813,7 @@ footer span a:hover{
     .about .about-content .column{
         width: 100%;
     }
+    
     .about .about-content .left .wrapper{
         margin: 0 auto 10px;
     }
@@ -792,7 +873,9 @@ footer span a:hover{
     .contact .left .wrapper .buttonmob1{
         padding-top: 5px;
     }
-    
+    .about .about-content .left img{
+        margin-left: 50px;
+    }
     .about .about-content .left .wrapper .buttonmob{
         display: flex;
         flex-wrap: wrap;
@@ -801,6 +884,6 @@ footer span a:hover{
         padding-top: 5px;
     }
     .about .about-content .left .wrapper{
-        margin: 0 0 0 90px;
+        margin: 0 0 0 150px;
     }
 }
