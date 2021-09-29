@@ -19,14 +19,14 @@ $(document).ready(function(){
 
     // Typing animation script
     var typed = new Typed('#typing', {
-        strings: ["Web Developer", "Youtuber", "Blogger", "Freelancer", "Teacher"],
+        strings: ["Web Developer", "Freelancer", "Youtuber", "Blogger", "Teacher"],
         typeSpeed: 100,
         backSpeed: 60,
         loop:true
       });
 
       var typed = new Typed('#typing2', {
-        strings: ["Web Developer", "Youtuber", "Blogger", "Freelancer", "Teacher"],
+        strings: ["Web Developer", "Freelancer", "Youtuber", "Blogger", "Teacher"],
         typeSpeed: 100,
         backSpeed: 60,
         loop:true

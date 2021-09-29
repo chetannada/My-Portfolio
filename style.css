@@ -459,21 +459,38 @@ section .title::after{
     top: 0;
     background: crimson;
     transition: all 0.3s linear;
+    
 }
 
 .skills .skills-content .right .html::before{
+    animation: animate 2s linear ;
     width: 90%;
 }
+@keyframes animate {
+    0% {
+        left: 0;
+        width: 0;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+
 .skills .skills-content .right .css::before{
+    animation: animate 2s linear ;
     width: 80%;
 }
 .skills .skills-content .right .js::before{
+    animation: animate 2s linear ;
     width: 70%;
 }
 .skills .skills-content .right .rjs::before{
+    animation: animate 2s linear ;
     width: 50%;
 }
 .skills .skills-content .right .adp::before{
+    animation: animate 2s linear ;
     width: 90%;
 }
 
@@ -873,9 +890,7 @@ footer span a:hover{
     .contact .left .wrapper .buttonmob1{
         padding-top: 5px;
     }
-    .about .about-content .left img{
-        margin-left: 50px;
-    }
+    
     .about .about-content .left .wrapper .buttonmob{
         display: flex;
         flex-wrap: wrap;
@@ -884,6 +899,6 @@ footer span a:hover{
         padding-top: 5px;
     }
     .about .about-content .left .wrapper{
-        margin: 0 0 0 150px;
+        padding: 0 0 0 100px;
     }
 }
