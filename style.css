@@ -110,6 +110,18 @@ html{
     bottom: 30px;
 }
 
+
+/* Fade In & Fade Out Elements on Scroll Start */
+.fadein{
+    opacity: 0;
+}
+.showme{
+    transition: opacity 0.1s ease;
+    opacity: 1 !important;
+}
+
+
+
 /* Home Section Styling */
 .home{
     display: flex;
@@ -762,24 +774,26 @@ footer span a:hover{
 
 
 
-
 /* reponsive media query start */
 @media (max-width: 1300px){
     .home .max-width{
         margin-left: 0px;
     }
 }
+
 @media (max-width: 1104px){
     .about .about-content .left img{
         height: 350px;
         width: 350px;
     }
 }
+
 @media (max-width: 991px){
     .max-width{
         padding: 0 50px;
     }
 }
+
 @media (max-width: 947px){
 
     .max-width{
@@ -850,9 +864,9 @@ footer span a:hover{
     .contact .left .text{
         margin-top: 0px;
     }
-    
-    
+       
 }
+
 @media (max-width: 690px){
 
     .max-width{
@@ -872,6 +886,13 @@ footer span a:hover{
     }
     
 }
+
+@media (max-width: 540px){
+    .about .about-content .right .text .break{
+        display: block;
+    }
+}
+
 @media (max-width: 500px){
     .max-width{
         padding: 0 23px;
