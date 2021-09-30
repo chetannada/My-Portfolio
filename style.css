@@ -113,7 +113,7 @@ html{
 
 /* Fade In & Fade Out Elements on Scroll Start */
 .fadein{
-    opacity: 0;
+    opacity: 0.5;
 }
 .showme{
     transition: opacity 0.1s ease;
