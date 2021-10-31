@@ -864,6 +864,7 @@ footer span a:hover {
   .about .about-content .right .text .break {
     display: block;
   }
+
 }
 
 @media (max-width: 500px) {
@@ -893,6 +894,13 @@ footer span a:hover {
     padding-top: 5px;
   }
   .about .about-content .left .wrapper {
-    padding: 0 0 0 100px;
+    padding: 0 0 0 50px;
   }
+}
+
+@media (max-width: 380px){
+    .about .about-content .left img {
+        height: 250px;
+        width: 250px;
+      }
 }
