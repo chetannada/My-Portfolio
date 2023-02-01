@@ -413,13 +413,13 @@ section .title::after {
 }
 .projects .carousel .card {
   background: #222;
-  border-radius: 0px 40px 0px 40px;
+  border-radius: 10px;
   padding: 25px 20px;
   text-align: center;
   transition: all 0.3s ease;
 }
 .projects .carousel .card:hover {
-  background: crimson;
+  background: rgb(48, 48, 48);
 }
 .projects .carousel .card .box {
   display: flex;
@@ -429,20 +429,20 @@ section .title::after {
   transition: all 0.3s ease;
 }
 .projects .carousel .card:hover .box {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .projects .carousel .card p {
-  font-size: 22px;
-  padding-top: 8px;
+  font-size: 16px;
+  padding-top: 10px;
   color: #fff;
 }
 .projects .carousel .card img {
-  height: 200px;
-  width: 200px;
-  object-fit: cover;
-  border-radius: 0px 40px 0px 40px;
-  border: 5px solid crimson;
+  height: 250px;
+  width: 280px;
+  object-fit: fill;
+  border-radius: 10px;
+  border: 2px solid crimson;
   transition: all 0.3s ease;
 }
 .projects .carousel .card:hover img {
@@ -712,6 +712,14 @@ footer span a:hover {
   }
   .home .home-content .text-3 {
     font-size: 27px;
+  }
+  .projects .carousel .card {
+    margin-top: 10px;
+    padding: 10px 15px;
+  }
+  .projects .carousel .card img {
+    height: 180px;
+    width: 200px;
   }
 }
 
