@@ -27,8 +27,8 @@ $(document).ready(function () {
       if (bottom_of_window < bottom_of_element) {
         $(this).removeClass("showme");
       }
-      // Fade In & Fade Out Elements on Scroll script end
     });
+    // Fade In & Fade Out Elements on Scroll script end
   });
 
   // Scroll up Button script start
@@ -37,20 +37,24 @@ $(document).ready(function () {
   });
   // Scroll up Button script end
 
+  // animation Script for display
+  const animationScript = ["Front End Developer", "React.js Developer", "Next.js Developer"];
+
   // Typing animation script start
-  var typed = new Typed(".typing", {
-    strings: ["React.js Developer", "Front End Developer", "Youtuber", "Teacher"],
+  new Typed(".typing", {
+    strings: animationScript,
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
   });
 
-  var typed = new Typed(".typing2", {
-    strings: ["React.js Developer", "Front End Developer", "Youtuber", "Teacher"],
+  new Typed(".typing2", {
+    strings: animationScript,
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
   });
+  // Typing animation script End
 
   // toggle menu/navbar script start
   $(".menu-btn").click(function () {
@@ -82,3 +86,8 @@ $(document).ready(function () {
   });
   // owl carousel script end
 });
+
+// Get the current year
+const currentYear = new Date().getFullYear();
+// Set the current year in the span with id "year"
+document.getElementById('year').textContent = currentYear;
